@@ -43,12 +43,12 @@
             <div>
                 <label for="name-field">Name</label>
                 <br />
-                <input name="name-field" type="text">
+                <input id="name-field" name="name-field" type="text" required>
             </div>
             <div>
                 <label for="email-field">Email</label>
                 <br />
-                <input name="email-field" type="text" required>
+                <input id="email-field" name="email-field" type="email" required>
             </div>
         </fieldset>
     </form>
@@ -60,17 +60,18 @@
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
                     <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
                 </select>
                 Credit Card Number
             </label>
             <br />
-            <input type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+            <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
             <br />
             <div>
                 <label for="expiration-date">
                     Expiration Date
                     <br />
-                    <input type="text" id="expiration-date" >
+                    <input type="text" id="expiration-date" />
                 </label>
             </div>
         </fieldset>
